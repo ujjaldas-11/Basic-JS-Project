@@ -58,24 +58,7 @@ function checkWinner() {
       h2.style.color = "green";
       box[a].style.backgroundColor = "green";
       return;
-    } else if ([...box].every((e) => e.innerHTML !== "")) {
-      // if all boxes are filled and no winner
-      if (
-        box[a].innerHTML === box[b].innerHTML &&
-        box[a].innerHTML === box[c].innerHTML
-      ) {
-        h2.innerHTML = `player ${box[a].innerHTML} wins!`;
-        h2.style.color = "green";
-        // box[a].style.backgroundColor = "green";
-        box[a].style.backgroundColor = "green";
-        // box[c].style.backgroundColor = "green";
-        return;
-      } else {
-        h2.innerHTML = "It's a draw!";
-        h2.style.color = "red";
-        return;
-      }
-    }
+    } 
   }
 }
 
